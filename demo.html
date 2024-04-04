@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<script>
+			function fun1()
+			{
+				var address = document.getElementById("p1");
+				var text = address.innerHTML;
+				alert(text);
+			}
+
+			function fun2()
+			{
+				document.getElementById("p1").innerHTML =" Welcome to java ";
+			}
+			
+			function fun3()
+			{
+				var address = document.getElementsByClassName("p2");
+				address[0].style.color="red";
+				address[0].style.fontSize="30px";
+				
+			}
+			
+			function hide()
+			{
+				document.getElementById("div1").style.visibility="hidden";
+			}
+			
+			function show()
+			{
+				var addr = document.getElementById("div1");
+				addr.style.visibility ="visible";
+				addr.style.background = "red";
+				addr.style.border = "dotted";
+			}
+			
+			</script>
+			<style>
+			
+				#div1
+				{
+					height:150px;
+					width:150px;
+					baclground-color:gray;
+					border:solid;
+				}
+				
+				
+			</style>
+		</head>
+	<body>
+			<p id ="p1" > Welcome to js </p>
+			<p class = "p2" > Welcome to learning </p>
+			<p class = "p2" > Welcome to learning </p>
+			<p class = "p2" > Welcome to learning </p>
+			<div id = "div1"></div>
+			
+			<button onClick = "fun1()" >Fun1</button>
+			<button onClick = "fun2()" >Fun2</button>
+			<button onClick = "fun3()" >Fun3</button>
+			<button onClick = "hide()" >Hide</button>
+			<button onClick = "show()" >Show</button>
+			
+			
+
+			
+			
+		
+	</head>
+</html>
